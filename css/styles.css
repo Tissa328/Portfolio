@@ -155,6 +155,22 @@ h2 {
     margin-bottom: 0.2rem;
 }
 
+.project-link {
+    margin-top: 0.55rem;
+    font-size: 0.85rem;
+}
+
+.project-item a {
+    color: #d0d0d0;
+    text-decoration: none;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.project-item a:hover {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
 .lang-list {
     display: flex;
     flex-wrap: wrap;
