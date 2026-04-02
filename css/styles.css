@@ -57,15 +57,37 @@ h1 {
     color: #c0c0c0;
 }
 
-.contact a {
-    color: #d0d0d0;
-    text-decoration: none;
-    border-bottom: 1px solid #3a3a3a;
+/* Links: not blue; underline = clearly clickable; :visited distinct (browser-safe props only) */
+.container a:any-link {
+    color: #5eead4;
+    text-decoration: underline;
+    text-decoration-color: rgba(94, 234, 212, 0.55);
+    text-underline-offset: 0.2em;
 }
 
-.contact a:hover {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
+.container a:visited {
+    color: #d8b4fe;
+    text-decoration-color: rgba(216, 180, 254, 0.55);
+}
+
+.container a:hover {
+    color: #a7f3d0;
+    text-decoration-color: #6ee7b7;
+}
+
+.container a:visited:hover {
+    color: #ede9fe;
+    text-decoration-color: #ddd6fe;
+}
+
+.container a:focus-visible {
+    outline: 2px solid #5eead4;
+    outline-offset: 3px;
+    border-radius: 1px;
+}
+
+.container a:active {
+    opacity: 0.88;
 }
 
 section {
@@ -158,17 +180,6 @@ h2 {
 .project-link {
     margin-top: 0.55rem;
     font-size: 0.85rem;
-}
-
-.project-item a {
-    color: #d0d0d0;
-    text-decoration: none;
-    border-bottom: 1px solid #3a3a3a;
-}
-
-.project-item a:hover {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
 }
 
 .lang-list {
